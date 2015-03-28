@@ -22,8 +22,9 @@ Partial Class FormClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.dgvClienteGeneral = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtBuscarCliente = New System.Windows.Forms.TextBox()
         Me.gbTelefonos = New System.Windows.Forms.GroupBox()
@@ -66,8 +67,8 @@ Partial Class FormClientes
         Me.txtCiudad = New System.Windows.Forms.TextBox()
         Me.txtDireccionUbicacionClienteGeneral = New System.Windows.Forms.TextBox()
         Me.txtDireccionFacturacionClienteGeneral = New System.Windows.Forms.TextBox()
-        Me.dgvClienteGeneral = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.dgvClienteGeneral, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.gbTelefonos.SuspendLayout()
         Me.gbTipoClienteGeneral.SuspendLayout()
@@ -78,7 +79,6 @@ Partial Class FormClientes
         Me.gbInformacionContacto.SuspendLayout()
         Me.gbDatosClienteGeneral.SuspendLayout()
         Me.gbDireccionClienteGeneral.SuspendLayout()
-        CType(Me.dgvClienteGeneral, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -100,6 +100,19 @@ Partial Class FormClientes
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Cliente"
+        '
+        'dgvClienteGeneral
+        '
+        Me.dgvClienteGeneral.AllowUserToAddRows = False
+        Me.dgvClienteGeneral.BackgroundColor = System.Drawing.SystemColors.ControlLight
+        Me.dgvClienteGeneral.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvClienteGeneral.GridColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.dgvClienteGeneral.Location = New System.Drawing.Point(4, 343)
+        Me.dgvClienteGeneral.Name = "dgvClienteGeneral"
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgvClienteGeneral.RowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvClienteGeneral.Size = New System.Drawing.Size(731, 276)
+        Me.dgvClienteGeneral.TabIndex = 48
         '
         'GroupBox2
         '
@@ -513,32 +526,19 @@ Partial Class FormClientes
         Me.txtDireccionFacturacionClienteGeneral.Size = New System.Drawing.Size(354, 20)
         Me.txtDireccionFacturacionClienteGeneral.TabIndex = 4
         '
-        'dgvClienteGeneral
-        '
-        Me.dgvClienteGeneral.AllowUserToAddRows = False
-        Me.dgvClienteGeneral.BackgroundColor = System.Drawing.SystemColors.ControlLight
-        Me.dgvClienteGeneral.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvClienteGeneral.GridColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.dgvClienteGeneral.Location = New System.Drawing.Point(4, 343)
-        Me.dgvClienteGeneral.Name = "dgvClienteGeneral"
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgvClienteGeneral.RowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgvClienteGeneral.Size = New System.Drawing.Size(731, 276)
-        Me.dgvClienteGeneral.TabIndex = 48
-        '
         'FormClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(740, 624)
-        Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox1)
         Me.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FormClientes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.dgvClienteGeneral, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.gbTelefonos.ResumeLayout(False)
@@ -557,7 +557,6 @@ Partial Class FormClientes
         Me.gbDatosClienteGeneral.PerformLayout()
         Me.gbDireccionClienteGeneral.ResumeLayout(False)
         Me.gbDireccionClienteGeneral.PerformLayout()
-        CType(Me.dgvClienteGeneral, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

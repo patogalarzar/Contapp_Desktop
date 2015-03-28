@@ -1,0 +1,8 @@
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\ClassLibraryC\bin\Debug\ClassLibraryC.dll
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\ClassLibraryC\bin\Debug\ClassLibraryC.pdb
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\ClassLibraryC\bin\Debug\ClassLibraryC.xml
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\ClassLibraryC\obj\Debug\ClassLibraryC.Resources.resources
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\ClassLibraryC\obj\Debug\ClassLibraryC.vbproj.GenerateResource.Cache
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\ClassLibraryC\obj\Debug\ClassLibraryC.dll
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\ClassLibraryC\obj\Debug\ClassLibraryC.xml
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\ClassLibraryC\obj\Debug\ClassLibraryC.pdb

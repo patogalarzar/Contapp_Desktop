@@ -23,6 +23,7 @@ Partial Class FormTipoAccion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbTipoAccion = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.rbProveedor = New System.Windows.Forms.RadioButton()
         Me.rbCliente = New System.Windows.Forms.RadioButton()
         Me.rbNotacredito = New System.Windows.Forms.RadioButton()
@@ -31,11 +32,13 @@ Partial Class FormTipoAccion
         Me.rbFacturacion = New System.Windows.Forms.RadioButton()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnAceptar = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.gbTipoAccion.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbTipoAccion
         '
+        Me.gbTipoAccion.Controls.Add(Me.Label1)
         Me.gbTipoAccion.Controls.Add(Me.rbProveedor)
         Me.gbTipoAccion.Controls.Add(Me.rbCliente)
         Me.gbTipoAccion.Controls.Add(Me.rbNotacredito)
@@ -44,19 +47,31 @@ Partial Class FormTipoAccion
         Me.gbTipoAccion.Controls.Add(Me.rbFacturacion)
         Me.gbTipoAccion.Controls.Add(Me.btnCancelar)
         Me.gbTipoAccion.Controls.Add(Me.btnAceptar)
+        Me.gbTipoAccion.Controls.Add(Me.Label2)
         Me.gbTipoAccion.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbTipoAccion.Location = New System.Drawing.Point(2, -7)
+        Me.gbTipoAccion.Location = New System.Drawing.Point(0, -8)
         Me.gbTipoAccion.Name = "gbTipoAccion"
-        Me.gbTipoAccion.Size = New System.Drawing.Size(518, 259)
+        Me.gbTipoAccion.Size = New System.Drawing.Size(368, 218)
         Me.gbTipoAccion.TabIndex = 0
         Me.gbTipoAccion.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(103, 19)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(144, 18)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "Escoge una opción"
         '
         'rbProveedor
         '
         Me.rbProveedor.AutoSize = True
-        Me.rbProveedor.Location = New System.Drawing.Point(262, 102)
+        Me.rbProveedor.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbProveedor.Location = New System.Drawing.Point(213, 117)
         Me.rbProveedor.Name = "rbProveedor"
-        Me.rbProveedor.Size = New System.Drawing.Size(88, 19)
+        Me.rbProveedor.Size = New System.Drawing.Size(98, 22)
         Me.rbProveedor.TabIndex = 7
         Me.rbProveedor.TabStop = True
         Me.rbProveedor.Text = "Proveedor"
@@ -65,9 +80,10 @@ Partial Class FormTipoAccion
         'rbCliente
         '
         Me.rbCliente.AutoSize = True
-        Me.rbCliente.Location = New System.Drawing.Point(101, 102)
+        Me.rbCliente.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbCliente.Location = New System.Drawing.Point(50, 117)
         Me.rbCliente.Name = "rbCliente"
-        Me.rbCliente.Size = New System.Drawing.Size(74, 19)
+        Me.rbCliente.Size = New System.Drawing.Size(82, 22)
         Me.rbCliente.TabIndex = 4
         Me.rbCliente.TabStop = True
         Me.rbCliente.Text = "Cliente"
@@ -76,9 +92,10 @@ Partial Class FormTipoAccion
         'rbNotacredito
         '
         Me.rbNotacredito.AutoSize = True
-        Me.rbNotacredito.Location = New System.Drawing.Point(101, 63)
+        Me.rbNotacredito.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbNotacredito.Location = New System.Drawing.Point(50, 90)
         Me.rbNotacredito.Name = "rbNotacredito"
-        Me.rbNotacredito.Size = New System.Drawing.Size(130, 19)
+        Me.rbNotacredito.Size = New System.Drawing.Size(146, 22)
         Me.rbNotacredito.TabIndex = 3
         Me.rbNotacredito.TabStop = True
         Me.rbNotacredito.Text = "Nota de Crédito"
@@ -87,9 +104,10 @@ Partial Class FormTipoAccion
         'rbBodega
         '
         Me.rbBodega.AutoSize = True
-        Me.rbBodega.Location = New System.Drawing.Point(262, 63)
+        Me.rbBodega.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbBodega.Location = New System.Drawing.Point(213, 90)
         Me.rbBodega.Name = "rbBodega"
-        Me.rbBodega.Size = New System.Drawing.Size(67, 19)
+        Me.rbBodega.Size = New System.Drawing.Size(74, 22)
         Me.rbBodega.TabIndex = 6
         Me.rbBodega.TabStop = True
         Me.rbBodega.Text = "Bodega"
@@ -98,9 +116,10 @@ Partial Class FormTipoAccion
         'rbCompras
         '
         Me.rbCompras.AutoSize = True
-        Me.rbCompras.Location = New System.Drawing.Point(262, 22)
+        Me.rbCompras.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbCompras.Location = New System.Drawing.Point(213, 63)
         Me.rbCompras.Name = "rbCompras"
-        Me.rbCompras.Size = New System.Drawing.Size(74, 19)
+        Me.rbCompras.Size = New System.Drawing.Size(82, 22)
         Me.rbCompras.TabIndex = 5
         Me.rbCompras.TabStop = True
         Me.rbCompras.Text = "Compras"
@@ -109,9 +128,10 @@ Partial Class FormTipoAccion
         'rbFacturacion
         '
         Me.rbFacturacion.AutoSize = True
-        Me.rbFacturacion.Location = New System.Drawing.Point(101, 22)
+        Me.rbFacturacion.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbFacturacion.Location = New System.Drawing.Point(50, 63)
         Me.rbFacturacion.Name = "rbFacturacion"
-        Me.rbFacturacion.Size = New System.Drawing.Size(102, 19)
+        Me.rbFacturacion.Size = New System.Drawing.Size(114, 22)
         Me.rbFacturacion.TabIndex = 2
         Me.rbFacturacion.TabStop = True
         Me.rbFacturacion.Text = "Facturación"
@@ -120,7 +140,7 @@ Partial Class FormTipoAccion
         'btnCancelar
         '
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnCancelar.Location = New System.Drawing.Point(101, 210)
+        Me.btnCancelar.Location = New System.Drawing.Point(26, 164)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(155, 45)
         Me.btnCancelar.TabIndex = 1
@@ -130,18 +150,29 @@ Partial Class FormTipoAccion
         'btnAceptar
         '
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnAceptar.Location = New System.Drawing.Point(262, 210)
+        Me.btnAceptar.Location = New System.Drawing.Point(187, 164)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(155, 45)
         Me.btnAceptar.TabIndex = 0
         Me.btnAceptar.Text = "Aceptar"
         Me.btnAceptar.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.Label2.Location = New System.Drawing.Point(24, 33)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(315, 15)
+        Me.Label2.TabIndex = 9
+        Me.Label2.Text = "____________________________________________"
+        '
         'FormTipoAccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(522, 253)
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ClientSize = New System.Drawing.Size(368, 209)
         Me.ControlBox = False
         Me.Controls.Add(Me.gbTipoAccion)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
@@ -161,5 +192,7 @@ Partial Class FormTipoAccion
     Friend WithEvents rbFacturacion As System.Windows.Forms.RadioButton
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents btnAceptar As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 
 End Class

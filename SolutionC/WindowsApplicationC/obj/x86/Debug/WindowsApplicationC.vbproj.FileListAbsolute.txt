@@ -10,3 +10,15 @@ C:\SysC\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.pdb
 C:\SysC\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.FormTipoAccion.resources
 C:\SysC\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.FormLogin.resources
 C:\SysC\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.FormClientes.resources
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.exe
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.xml
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.pdb
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\bin\Debug\WindowsApplicationC.exe
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\bin\Debug\WindowsApplicationC.pdb
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\bin\Debug\WindowsApplicationC.xml
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.FormClientes.resources
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.FormLogin.resources
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.FormTipoAccion.resources
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.MDIContable.resources
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.Resources.resources
+C:\Users\Patricio\Documents\GitHub\Contapp_Desktop\SolutionC\WindowsApplicationC\obj\x86\Debug\WindowsApplicationC.vbproj.GenerateResource.Cache

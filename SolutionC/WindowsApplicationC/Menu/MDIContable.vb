@@ -1,13 +1,16 @@
 ﻿Imports System.Windows.Forms
 
 Public Class MDIContable
+    Private Sub MDIContable_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.ToolStrip.Visible = Me.ToolBarToolStripMenuItem.Checked
+    End Sub
 
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripMenuItem.Click, NewToolStripButton.Click, NewWindowToolStripMenuItem.Click
         ' Cree una nueva instancia del formulario secundario.
         Dim ChildForm As New FormTipoAccion
 
         ' Conviértalo en un elemento secundario de este formulario MDI antes de mostrarlo.
-        ChildForm.MdiParent = Me
+        ChildForm.MdiParent = Nothing
         'm_ChildFormNumber += 1
         'ChildForm.Text = "Ventana " & m_ChildFormNumber
 
@@ -53,7 +56,7 @@ Public Class MDIContable
     End Sub
 
     Private Sub ToolBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles ToolBarToolStripMenuItem.Click
-        Me.ToolStrip.Visible = Me.ToolBarToolStripMenuItem.Checked
+        'Me.ToolStrip.Visible = Me.ToolBarToolStripMenuItem.Checked
     End Sub
 
     Private Sub StatusBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles StatusBarToolStripMenuItem.Click
@@ -84,5 +87,4 @@ Public Class MDIContable
     End Sub
 
     Private m_ChildFormNumber As Integer
-
 End Class

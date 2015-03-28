@@ -1,4 +1,23 @@
 ﻿Public Class FormTipoAccion
+    Dim clientes As New FormClientes
+
+    Private Function OpenSubForm(ByVal form As Form) As Boolean
+        'Chequeo si ya está abierto.
+        For Each f As Form In Application.OpenForms
+            'Si está abierto devuelvo False (no se puede abrir).
+            If f.Name = form.Name Then
+                Return False
+            End If
+        Next
+
+        'Si se llega a este punto es porque no está abierto.
+        'Abro el formulario.
+        form.MdiParent = MDIContable
+        form.Show()
+
+        'Indico apertura exitosa.
+        Return True
+    End Function
 
     Private Sub btnAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAceptar.Click
         If rbFacturacion.Checked = True Then
@@ -6,19 +25,10 @@
         ElseIf rbNotacredito.Checked = True Then
             MsgBox("Nota de Crédito")
         ElseIf rbCliente.Checked = True Then
-            MsgBox("Cliente")
-
-            'Valida que el formulario no se abra mas de una vez (si no cumple ninguna de las siguientes condicionales el form esta abierto, entonces lo muestra y trae al frente)
-            If My.Forms.FormClientes Is Nothing Then 'pregunta si el form esta vacio (no se ha ejecutado ninguna instacia)
-                My.Forms.FormClientes = New FormClientes   ' crea una nueva instacia
-                My.Forms.MDIContable.ToolStripStatusLabel.Text = "Cliente" ' envia informacion delusuario que se logueo para auditoria
-            End If
-            If My.Forms.FormClientes.IsDisposed Then 'pregunta si el form ha sido utilizado (se ejecuto una instacia y se cerro el form)
-                FormClientes = New FormClientes ' se reinicia la instacia creando una nueva
-                My.Forms.MDIContable.ToolStripStatusLabel.Text = "Cliente" ' envia informacion delusuario que se logueo para auditoria
-            End If
-            FormClientes.Show() ' muestra el form
-            FormClientes.BringToFront() ' trae al frente al form sobre los demas forms abiertos
+            'Valida que el formulario no se abra mas de una vez (si el valor false es el form esta abierto, entonces lo muestra y trae al frente)
+            Me.Hide()
+            clientes.Show()
+            'OpenSubForm(clientes)
 
         ElseIf rbCompras.Checked = True Then
             MsgBox("Compras")
@@ -34,4 +44,5 @@
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Close()
     End Sub
+
 End Class
